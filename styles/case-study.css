@@ -1,0 +1,100 @@
+/* ============================================
+   CASE STUDY PAGE TEMPLATE
+   Used on: case-studies/homepath.html, case-studies/dus360.html, case-studies/forecasting.html — case study layout (back link, meta, body, highlights grid).
+   ============================================ */
+.cs-back {
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 600; font-stretch: condensed;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--text-caption); cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 32px; transition: color 0.2s;
+}
+.cs-back:hover { color: var(--accent); }
+.cs-eyebrow {
+  font-family: var(--font-display);
+  font-size: 14px; font-weight: 600; font-stretch: condensed;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--text-caption); margin-bottom: 12px;
+}
+.cs-title {
+  font-family: var(--font-display);
+  font-size: 48px; font-weight: 700; font-stretch: condensed;
+  line-height: 1.15; color: var(--text-primary); margin-bottom: 28px;
+}
+.cs-meta { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 0; }
+.cs-meta-item { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.cs-meta-label {
+  font-family: var(--font-display);
+  font-size: 11px; font-weight: 600; font-stretch: condensed;
+  letter-spacing: 1.2px; text-transform: uppercase;
+  color: var(--text-caption); margin-bottom: 4px;
+}
+.cs-hero-image { max-width: 1200px; margin: 48px auto; padding: 0 var(--site-padding); }
+.cs-browser-frame {
+  background: #1a1f2e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+.cs-browser-bar {
+  background: #2a2d3a;
+  padding: 10px 16px;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.cs-browser-dots { font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,0.25); }
+.cs-browser-url {
+  background: rgba(255,255,255,0.08);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  flex: 1; max-width: 300px;
+}
+.cs-browser-frame img { width: 100%; display: block; }
+.cs-body { padding: 20px var(--site-padding) 40px; }
+.cs-body p { font-size: 17px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 24px; }
+.cs-body p:first-child { font-size: 19px; color: var(--text-primary); line-height: 1.7; }
+.cs-body-heading {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 700; font-stretch: condensed;
+  letter-spacing: -0.01em; text-transform: uppercase;
+  color: var(--text-primary); margin: 56px 0 16px;
+}
+.cs-body .cs-inline-bold { font-weight: 600; color: var(--text-primary); }
+.cs-strategy {
+  font-size: 17px; line-height: 1.75; color: var(--text-secondary);
+  padding-left: 20px; margin: 20px 0;
+}
+.cs-strategy .cs-inline-bold { font-weight: 600; color: var(--text-primary); }
+.cs-highlights { padding: 20px var(--site-padding) 80px; }
+.cs-highlights-heading {
+  font-family: var(--font-display);
+  font-size: 44px; font-weight: 700; font-stretch: condensed;
+  text-transform: uppercase; color: var(--text-primary); margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+.cs-highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.cs-highlight-card {
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.cs-highlight-label {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 700; font-stretch: condensed;
+  color: var(--accent); margin-bottom: 10px;
+}
+.cs-highlight-text { font-size: 15px; line-height: 1.6; color: var(--text-secondary); }
+
+@media screen and (min-width: 800px) {
+  .cs-highlight-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+/* ============================================
+   CONTACT CTA
+   Used on: index.html, about.html — "Interested in working together?" section above footer.
+   ============================================ */
+.contact-cta-section {
+  text-align: center;
+}
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}

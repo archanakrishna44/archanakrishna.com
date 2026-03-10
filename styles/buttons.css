@@ -1,0 +1,58 @@
+/* ============================================
+   BUTTONS (Bootstrap .btn overrides — pill shape)
+   Used on: card CTAs (index), contact CTA (index, about, case studies), nav Back (site-modules), carousel prev/next (about).
+   ============================================ */
+
+.btn {
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: var(--font-body);;
+  padding: 12px 20px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, gap 0.2s;
+}
+
+/* Black pill — primary actions (Get in Touch, Read Case Study) */
+.btn-primary {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+}
+.btn-primary:hover {
+  background: #0e0e0e;
+  color: #fff;
+}
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(26, 26, 26, 0.35);
+}
+
+/* White pill — secondary (Back, carousel arrows) */
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+}
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.btn-secondary:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(19, 64, 60, 0.25);
+}
+
+/* Card CTA: slight gap increase on hover (span inside link) */
+.case-card .btn-primary:hover {
+  gap: 12px;
+}
+
+/* Carousel prev/next: compact pill for icon-only buttons */
+.carousel-controls .btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  justify-content: center;
+}

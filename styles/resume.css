@@ -1,0 +1,23 @@
+/* ============================================
+   RESUME PAGE
+   Used on: resume.html only (PDF iframe container).
+   ============================================ */
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px;
+}
+.resume-iframe-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  min-height: 80vh;
+}
+.resume-iframe {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: none;
+}

@@ -1,0 +1,43 @@
+/* ============================================
+   LAYOUT — content width, page sections
+   Used on: all pages (every section uses .page-section + a --modifier).
+   ============================================ */
+/* Content width — shared by main content areas */
+.nav,
+.page-section--hero,
+.page-section--about-hero,
+.page-section--cs-hero,
+.cs-body,
+.cs-highlights {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+/* Page sections — shared padding; modifiers add section-specific layout */
+.page-section {
+  padding: 80px 0px;
+  margin: 0;
+  width: 100%;
+}
+.page-section--hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.page-section--about-hero {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  align-items: flex-start;
+}
+.page-section--about-testimonials {
+}
+.page-section--testimonial {
+  background: linear-gradient(180deg, rgba(19, 64, 60, 0.06) 0%, rgba(19, 64, 60, 0.09) 50%, rgba(19, 64, 60, 0.05) 100%);
+  margin-top: 20px;
+}
+.page-section--contact-cta {
+  text-align: center;
+}
+.page-section--cs-hero {
+}

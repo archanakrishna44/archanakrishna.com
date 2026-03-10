@@ -1,0 +1,56 @@
+/* ============================================
+   HERO
+   Used on: index.html (hero + .hero-headline/.hero-body); about.html (about-hero + .pullquote).
+   ============================================ */
+/* Shared section-hero classes (used by .hero-* and .about-hero-*) */
+.section-hero-text { flex: 0.6; }
+.section-headline {
+  font-family: var(--font-display);
+  font-stretch: condensed;
+  color: var(--text-primary);
+}
+/* Left-accent border — shared by pullquotes and strategy blocks */
+.pullquote,
+.cs-strategy {
+  border-left: 3px solid var(--accent);
+}
+.pullquote {
+  padding-left: 24px;
+  margin: 32px 0;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+.section-hero-image { flex: 0.4; }
+.section-hero-frame {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #d0cec9;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-headline {
+  font-size: var(--size-display);
+  font-weight: 800;
+  line-height: 0.95;
+  margin-bottom: 28px;
+  animation: fadeUp 0.8s ease-out 0.1s both;
+  text-transform: uppercase;
+}
+.hero-body {
+  font-size: var(--size-body);
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 520px;
+  animation: fadeUp 0.8s ease-out 0.5s both;
+}
+.hero-text-only { justify-content: flex-start; }
+.hero-text-only .hero-body { max-width: 600px; }

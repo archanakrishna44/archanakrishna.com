@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Archana Krishna</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="page active" data-active-nav="about">
+  <div id="nav-placeholder"></div>
+
+  <section class="page-section page-section--about-hero about-hero">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-7">
+          <div class="section-hero-text about-hero-text">
+            <h1 class="section-headline about-headline">I start every project by becoming temporarily obsessed with the people I'm designing for.</h1>
+            <div class="about-bio">
+              <p>Their workflows, their workarounds, and especially the sticky notes taped to their monitors. The real work is connecting the dots between what stakeholders think they want and what users innately need. It takes equal parts diplomacy and stubbornness, and digging deep to crack a problem wide open.</p>
+              <p>That curiosity, the pull to understand both the business side and the people side, started early. I began my career in product management at Macys.com, where I learned the importance of analytical thinking and finding the story behind the numbers. But the numbers never explained the why. I felt there had to be more to the story.</p>
+              <div class="pullquote">The best design strategies come from figuring out which questions to ask, not from having all the answers.</div>
+              <p>That question led me to discover human-centered design. I spent my early UX years at startups, which taught me how to be resourceful, wear multiple hats, and build products from nothing. Enterprise taught me how to scale that thinking. At Fannie Mae, I spent seven years leading UX research and service design across complex B2B platforms in the multifamily mortgage space. I partnered with product, engineering, and leadership teams to shape platform strategy and led research that influenced multimillion-dollar investment decisions.</p>
+              <p>Lately, that same puzzle-solving brain has me exploring how systems thinking and process orchestration can be applied to AI, and finding new ways to optimize how I work along the way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="section-hero-image about-hero-image">
+            <div class="section-hero-frame about-hero-image-frame">
+              <img src="images/headshot-cropped.jpg" alt="Archana Krishna — UX Design Leader">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section page-section--about-testimonials about-testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="about-testimonials-heading mb-0">What Others Say</h2>
+            <div class="carousel-controls">
+              <button type="button" class="btn btn-secondary" onclick="moveCarousel(-1)" aria-label="Previous testimonial"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-secondary" onclick="moveCarousel(1)" aria-label="Next testimonial"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="testimonial-card" id="tc-0">
+          <div class="tc-quote-mark">&ldquo;</div>
+          <p class="tc-text">What truly sets Archana apart is her mindset. She shows up ready to tackle tough problems, asks the right questions, willingly jumps in wherever help is needed, and is exceptional at both giving and receiving candid, constructive feedback. She does what it takes to deliver the best work and raises the bar for the team around her. Any organization looking for a strong, strategic UX leader would be fortunate to have Archana.</p>
+          <div class="tc-author">
+            <div class="tc-avatar">TH</div>
+            <div>
+              <div class="tc-name">Tom Hoover</div>
+              <div class="tc-role">Lead Product Designer, Fannie Mae</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="tc-1">
+          <div class="tc-quote-mark">&ldquo;</div>
+          <p class="tc-text">She was able to successfully lead multiple projects, manage partners, and navigate challenges to deliver thoughtful, timely projects. She is pragmatic in her approach to UX, looking for the best solutions to problems balanced with the needs of the product teams and capacity of engineering teams.</p>
+          <div class="tc-author">
+            <div class="tc-avatar">JP</div>
+            <div>
+              <div class="tc-name">Joshua Palay</div>
+              <div class="tc-role">VP of Consumer Insights and UX Design, Ford Credit</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="tc-2">
+          <div class="tc-quote-mark">&ldquo;</div>
+          <p class="tc-text">Any new functionality she brought to me for implementation was backed with hard user data and already discussed with the relevant stakeholders. She was always available to discuss features with the developers while they were working on them and was open to feedback as they came together.</p>
+          <div class="tc-author">
+            <div class="tc-avatar">SL</div>
+            <div>
+              <div class="tc-name">Sam Louis</div>
+              <div class="tc-role">Engineering Manager, Capitol One</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="tc-3">
+          <div class="tc-quote-mark">&ldquo;</div>
+          <p class="tc-text">Her study of our software and user base was thorough and deeper than initially thought necessary — but proved to be incredibly useful. The solutions were immediately actionable and easy to implement, showing consideration of the Design &amp; Development process to achieve the most valuable results.</p>
+          <div class="tc-author">
+            <div class="tc-avatar">CP</div>
+            <div>
+              <div class="tc-name">Chad Pugh</div>
+              <div class="tc-role">Design Director, Vimeo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="carousel-dots">
+            <div class="carousel-dot active" id="dot-0" onclick="goToSlide(0)"></div>
+            <div class="carousel-dot" id="dot-1" onclick="goToSlide(1)"></div>
+            <div class="carousel-dot" id="dot-2" onclick="goToSlide(2)"></div>
+            <div class="carousel-dot" id="dot-3" onclick="goToSlide(3)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section page-section--contact-cta contact-cta-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="contact-heading">Interested in working together?</h2>
+          <button class="btn btn-primary" onclick="window.open('https://www.linkedin.com/in/archkrishna/', '_blank')">Get in Touch <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/load-common.js"></script>
+</body>
+</html>

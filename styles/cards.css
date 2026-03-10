@@ -1,0 +1,101 @@
+/* ============================================
+   CASE STUDY CARDS
+   Used on: index.html — "Selected Work" block (DUS 360, HomePath, Forecasting cards). Card CTAs use .btn .btn-primary.
+   ============================================ */
+.section-heading {
+  text-align: center;
+  padding: 60px var(--site-padding) 40px;
+  /* background-color:red!important; */
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.case-card {
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+}
+.case-card:hover {
+  opacity: 0.95;
+}
+
+/* Project image — clean, no chrome */
+.card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.card-image::before { display: none; }
+.card-image::after { display: none; }
+.card-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease-out;
+}
+.case-card:hover .card-image img { transform: scale(1.02); }
+
+/* DUS 360 — fills frame from top-left */
+.card-image.dus360-image img {
+  object-fit: cover;
+  object-position: top left;
+  transform-origin: top left;
+}
+.case-card:hover .card-image.dus360-image img {
+  transform: scale(1.02);
+  transform-origin: top left;
+}
+
+/* HomePath — contain full width on white */
+.card-image.homepath-image { background: #ffffff; }
+.card-image.homepath-image img {
+  object-fit: contain;
+  object-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+/* SF3 Blueprint — positioned to show swim lanes */
+.card-image.sf3-image img {
+  object-fit: cover;
+  object-position: 15% 30%;
+}
+
+/* Card content — sits below image with breathing room */
+.card-content { padding: 28px 0 0; }
+.card-eyebrow {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: condensed;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-caption);
+  margin-bottom: 10px;
+}
+.card-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  font-stretch: condensed;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.card-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 24px;
+  max-width: 720px;
+}

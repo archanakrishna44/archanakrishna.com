@@ -1,0 +1,162 @@
+/* ============================================
+   STICKY NAV (fixed so it always stays at top)
+   Used on: header on all pages (injected via site-modules); case study pages use simplified nav with "Back" button.
+   ============================================ */
+/* Frosted glass nav — https://css.glass style */
+.nav-wrapper {
+  --nav-blur: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(225, 225, 225, 0.75);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(var(--nav-blur));
+  -webkit-backdrop-filter: blur(var(--nav-blur));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: none;
+}
+
+#nav-placeholder {
+  z-index: 100;
+}
+
+/* Reserve space so content doesn't sit under the fixed nav */
+body.page {
+  padding-top: 72px;
+}
+
+/* Main nav bar (all pages) */
+.nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Mobile nav: left menu and toggle — used on same header when viewport <800px */
+.nav-left-responsive {
+  position: relative;
+}
+
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  padding: 0;
+  margin-right: 4px;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.nav-left-responsive .inner {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: var(--bg-card);
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  padding: 8px 0;
+  min-width: 180px;
+  z-index: 120;
+}
+
+.nav-left-responsive.is-open .inner {
+  display: flex;
+}
+
+.nav-left-responsive .inner .nav-link {
+  display: block;
+  padding: 8px 16px;
+}
+
+.nav-left-responsive .inner .nav-link.active {
+  background-color: rgba(0,0,0,0.80);
+  color: #fff;
+}
+
+/* ========== */
+/* DESKTOP NAV — same header, ≥800px: horizontal links, hamburger hidden */
+/* ========== */
+
+@media screen and (min-width: 800px) {
+  .nav-left-responsive {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-left-responsive .inner {
+    position: static;
+    top: auto;
+    left: auto;
+    display: flex !important;
+    flex-direction: row;
+    gap: 32px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .nav-left-responsive .inner .nav-link {
+    padding: 0 0 4px;
+  }
+
+  .nav-left-responsive .inner .nav-link.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    background: rgba(0, 0, 0, 0.0);
+    padding: 0 0 4px;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: condensed;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover { color: var(--accent); }
+
+.nav-center {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-right { display: flex; align-items: center; }
+.nav-right a {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+.nav-right a:hover { color: var(--accent); }

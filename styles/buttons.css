@@ -17,12 +17,12 @@
 
 /* Black pill — primary actions (Get in Touch, Read Case Study) */
 .btn-primary {
-  background: #1a1a1a;
+  background: var(--accent);
   color: #fff;
   border: none;
 }
 .btn-primary:hover {
-  background: #0e0e0e;
+  background: var(--accent-hover);
   color: #fff;
 }
 .btn-primary:focus-visible {

@@ -38,7 +38,7 @@
 }
 
 .hero-headline {
-  font-size: var(--size-display);
+  font-size: clamp(48px, 10vw, var(--size-display));
   font-weight: 800;
   line-height: 0.95;
   margin-bottom: 28px;

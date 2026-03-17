@@ -1,3 +1,11 @@
+---
+status: active
+tags: []
+type: note
+created: '2026-03-10'
+modified: '2026-03-10'
+---
+
 # Coding Guidelines (No-Build HTML Site)
 
 These rules define how we structure and implement this site. Optimize for simplicity, consistency, and maintainability.
